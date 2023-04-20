@@ -21,7 +21,18 @@ import axios from 'axios';
                 url:`https://reqres.in/api/users`
             
 
-            })
+
+            }).then((response) => {
+
+                console.log(`success`);
+
+              
+
+            }).catch((error) => {
+
+                console.log(`fail`);
+
+            });
 
 
         }
