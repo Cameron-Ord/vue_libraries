@@ -3,8 +3,9 @@
 
         <span v-for="(user, i) in users" :key="i" >
 
-            <h1> {{ user.first_name }} </h1>
+            <h1> {{ user.first_name }} - {{ user.last_name }}</h1>
 
+            <img v-bind:src="user.avatar">
             
         </span>
 
